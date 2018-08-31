@@ -30,8 +30,8 @@ mkdir /etc/tools
 
 chmod 750 kick_weak_clients.sh
 
-/etc/tools/kick_weak_clients.sh 
+mv kick_weak_clients.sh /etc/tools/
 
-cp kick_weak_clients.sh /etc/tools/
+/etc/tools/kick_weak_clients.sh 
 
 echo '* * * * * /etc/tools/kick_weak_clients.sh &>/dev/null' >> /etc/crontabs/root
